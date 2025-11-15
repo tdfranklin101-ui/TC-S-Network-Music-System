@@ -1,22 +1,27 @@
-# TC-S-Network-Music-System
+# TC-S Network Music System
 
-Music streaming platform with play tracking
+Music streaming and royalty distribution platform.
 
-## Part of TC-S Network Platform
+## Features
 
-This repository is part of the TC-S Network 14-repository microservices architecture. All services connect to a shared Supabase database and work together as a cohesive platform.
+- Song catalog management
+- Play event tracking
+- Royalty calculation
+- Streaming analytics
 
 ## Setup
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-## Documentation
+## API Endpoints
 
-See the main [TC-S Network documentation](https://github.com/tdfranklin101-ui/TC-S-Network-Shared) for complete setup instructions.
+- `GET /api/songs` - List all songs
+- `POST /api/play/:songId` - Record play event
 
 ## License
 
-MIT © TC-S Network Foundation
+MIT - TC-S Network Foundation
